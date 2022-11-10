@@ -1,0 +1,43 @@
+{
+    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "pip-audit",
+                    "rules": [
+                        {
+                            "id": "001",
+                            "name": "vulnarable-dependency",
+                            "shortDescription": "vulnarable-dependency short",
+                            "fullDescription": "vulnarable-dependency short"
+                        }
+                    ]
+                }
+            },
+            "results": [
+                {
+                    "ruleId": "001",
+                    "message": {
+                        "text": "Result text. This result does not have a rule associated."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "requirements.txt"
+                                },
+                                "region": {
+                                    "startLine": 1,
+                                    "startColumn": 1,
+                                    "endColumn": 11
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
