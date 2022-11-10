@@ -6,12 +6,18 @@
             "tool": {
                 "driver": {
                     "name": "pip-audit",
+                    "version": "1.2.3",
+                    "informationUri": "https://github.com/pypa/pip-audit",
                     "rules": [
                         {
                             "id": "001",
                             "name": "vulnarable-dependency",
-                            "shortDescription": "vulnarable-dependency short",
-                            "fullDescription": "vulnarable-dependency short"
+                            "shortDescription": {
+                                "text": "vulnarable-dependency short"
+                            },
+                            "fullDescription": {
+                                "text": "vulnarable-dependency short"
+                            }
                         }
                     ]
                 }
